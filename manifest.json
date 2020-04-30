@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Get Auth Token",
+  "description": "This sample extension is to get auth token by making a post call",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "cookies",
+    "https://*.supporthive.com/"
+  ],
+  "content_scripts": [
+   {
+     "matches": ["<all_urls>"],
+     "js": ["popup.js"]
+   }
+ ],
+  "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'"
+}

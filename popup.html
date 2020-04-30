@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="requestform">
+<h3>Get Auth Token</h3>
+<form id="hfForm" name="hfForm">
+  <input type="text" id="username" name="username" placeholder="Username">
+  <input type="password" id="password" name="password" placeholder="password">
+  
+</form>
+<div class="buttons">
+            <button class="btn-hover color-1" id="hfsubmit">Get</button>
+         </div>
+</div>
+
+<div id="authtokenwraper">
+	<h3><p id="authtoken"></p></h3>
+</div>
+
+<div id="error">
+</div>
+
+    <script src="popup.js"></script>
+    <head>
+   <style>
+      body {background-color: #000000;
+            background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+            width: 400px;
+            padding: 40px 20px;}
+            h3   {color: orange;   font-weight: bold; }
+            label    {color: red;}
+            * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            }
+            .buttons {
+            margin-top: 10px;
+            text-align: center;
+            }
+            .btn-hover {
+            width: 100%;
+            font-size: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            font-weight: 400;
+            color: #fff;
+            cursor: pointer;
+            height: 40px;
+            cursor: pointer;
+            color: #ffffff;
+            padding: 0 20px;
+            margin-bottom: 10px;
+            border: none;
+            box-shadow: none;
+            border-radius: 100px;
+            text-align:center;
+            border: none;
+            background-size: 300% 100%;
+            border-radius: 10px;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            }
+            .btn-hover:hover {
+            background-position: 100% 0;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            }
+            .btn-hover:focus {
+            outline: none;
+            }
+            .btn-hover.color-1 {
+            background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+            box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+            }
+      * {
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+      }
+      .authform {
+         width: 100%;
+         background: #ffffff;
+         border-radius: 5px;
+         padding: 20px 30px;
+      }
+      .authform h3 {
+         color: #151515;
+         text-align: center;
+         font-size: 16px;
+         font-weight: 600;
+         margin-bottom: 20px;
+      }
+      #username, #password, #url {
+         width: 100%;
+         background: #EEEEEE;
+         border: none;
+         font-size: 14px;
+         height: 40px;
+         border-radius: 100px;
+         outline: none;
+         padding: 0 20px;
+         margin-bottom: 10px;
+      }
+      #error {
+         font-size: 14px;
+         color: #ff0000;
+      }
+   </style>
+</head>
+ 
+</html>
+
