@@ -1,5 +1,5 @@
 # HFX-auth-extension
-#$ Steps to enable this extension. For now it’ll get us only the auth token. 
+# Steps to enable this extension. For now it’ll get us only the auth token. 
 ```diff
 + - Unzip auth_token package
 + - Open chrome
